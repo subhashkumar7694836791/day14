@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day14project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+     <div class="main-top"></div>
+     <div class="main-bottom"></div>
+     <div class="main-over">
+        <div class="hori">
+            <div class="h2">
+            <h2>Home</h2>
+            <h2>Works</h2>
+            <h2>About</h2>
+            <h2>Contact</h2>
+            </div>
+            <button class="btn active">
+                <i class="ri-equal-line"></i>
+                <i class="ri-close-line"></i>
+            </button>
+           
+        </div>
+     </div>
+    </div>
+    <script>
+        
+        document.querySelector('.ri-equal-line').addEventListener('click', function(){
+               document.querySelector('.h2').style.display='flex'
+               document.querySelector('.ri-close-line').style.display='block'
+               document.querySelector('.ri-equal-line').style.display='none'
+            })
+        document.querySelector('.ri-close-line').addEventListener('click', function(){
+               document.querySelector('.h2').style.display='none'
+               document.querySelector('.ri-close-line').style.display='none'
+               document.querySelector('.ri-equal-line').style.display='block'
+            })
+
+    </script>
+</body>
+</html>

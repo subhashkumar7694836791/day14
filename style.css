@@ -1,0 +1,78 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,body
+{
+height:100%;
+width:100%;
+}
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.main-top{
+    height: 50%;
+    background-color: rgb(235, 151, 151);
+    width: 100%;
+
+}
+.main-bottom{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(222, 195, 145);
+}
+.main-over{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-over .hori{
+    min-width: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2vw;
+    align-items: center;
+    gap: 2vw;
+    border-radius: 10px;
+    background-color: white;
+}
+.main-over .hori .h2{
+    display: flex;
+    gap: 2vw;
+    
+}
+.main-over .hori .h2 h2{
+    transition: all ease 1s;
+
+    font-size: 2vw;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.main-over .hori button{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   border: none;
+   background-color: transparent;
+}
+.main-over .hori button i{
+    font-size: 2.5vw;
+    font-weight: 200;
+    font-family: sans-serif;
+    cursor: pointer; 
+}
+.main-over .hori button .ri-equal-line{
+    display: none;
+    }
